@@ -6,6 +6,8 @@
 // return the area stored
 
 // edge cases: if input was length 2, the while loop would only run once
+//Time Complexity O(n)
+//Space Complexity O(1)
 const maxArea = function(arr) {
   let area = 0;
   let leftP = 0;

@@ -11,6 +11,22 @@
 // (8, 3), (8, 0)
 // (9, 7), (9, 0)
 
+//LEET CODE BRUTE FORCE SOLUTION
+// Time Complexity: O(n^2)
+//Space Complexity: O(1)
+const maxArea = function(arr){
+  let maxArea = 0;
+  for(let i = 0; i < arr.length; i++){
+    for(let j = i + 1; j < height.length; j++){
+      maxarea = Math.max(maxarea, Math.min(arr[i], arr[j]) * (j - i));
+    }
+  }
+  return maxArea
+}
+
+
+//Our BRUTE FORCE solution using (x,y) coordinates
+
 const maxArea = function(arr) {
   const areas = [];
   for (let i = 0; i < arr.length; i += 1) {
